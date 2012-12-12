@@ -50,8 +50,8 @@
     BOOL stop = NO;
     
     for (id obj in inArray) {
-        if (stop) break;
         id newObj = filter(obj, &stop);
+        if (stop) break;
 
         if (newObj != nil) {
             [ret addObject:newObj];
